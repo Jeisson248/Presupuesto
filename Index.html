@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Presupuestos</title>
+	<link rel="stylesheet" type="text/css" href="CSS/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Estilo.css">
+	
+</head>
+<body>
+<div class="container">
+<header>
+	<h1 class="text-center">DEBITO DE GASTOS</h1>
+</header>
+<section class="Contenido principal">
+<div class="row">
+<div class="col">
+<div class="Contenido">
+<h2 class="text-center"> INGRESAR GASTOS</h2>
+<form id="Agregar gastos " action="#">
+	<div class="form-group">
+		<label for="gasto">Gasto</label>
+	<input type="text" id="gasto" name="" placeholder="Nombre del Gasto">
+	</div>
+	<div class="form-group">
+	<label for="Valor">Valor</label>
+<input type="text" id="cantidad" placeholder="Valor en $">
+	</div>
+<button type="submit" class="btn btn-danger">Agregar</button>
+</form>
+</div>
+</div>
+<div class="col" >
+	<div class="contenido2" >
+		<h2 class="text-center">REGISTRO DE GASTOS</h2>
+<div id="Gastos">
+	<ul class="list-group"></ul>
+</div>
+
+<div id="Presupuesto" class="Presupuesto">
+	<div class="alert alert-dark">
+		<p>Presupuesto :  $<span id="total"></span></p>
+	</div>
+<div class="alert alert-primary">
+	<p> restante: $ <span id="restante"></span></p>
+
+</div>
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</body>
+</html>

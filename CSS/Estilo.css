@@ -1,0 +1,17 @@
+header {
+    margin: 60px;
+    background-color: aquamarine;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    border-radius: 15px;
+}
+
+section{
+margin:  30px;
+background-color: blueviolet;
+font-family: cursive;
+font-size: 25px;
+border-radius: 15px;
+}
+
+
