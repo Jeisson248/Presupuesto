@@ -1,58 +1,64 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Presupuestos</title>
-	<link rel="stylesheet" type="text/css" href="CSS/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="CSS/Estilo.css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>presupuesto</title>
+    <link rel="stylesheet" href="/estilos/css/bootstrap.css">
+    <link rel="stylesheet" href="./estilos/estilos.css">
 </head>
-
 <body>
-	<div class="container">
-		<header>
-			<h1 class="text-center">DEBITO DE GASTOS</h1>
-		</header>
-		<section class="Contenido principal">
-			<div class="row">
-				<div class="col">
-					<div class="Contenido">
-						<h2 class="text-center"> INGRESAR GASTOS</h2>
-						<form id="Agregar-gastos " action="#">
-							<div class="form-group">
-								<label for="gasto">Gasto</label>
-								<input type="text" id="gasto" name="" placeholder="Nombre del Gasto">
-							</div>
-							<div class="form-group">
-								<label for="Valor">Valor</label>
-								<input type="text" id="cantidad" placeholder="Valor en $">
-							</div>
-							<button type="submit" class="btn btn-danger">Agregar</button>
-						</form>
-					</div>
-				</div>
-				<div class="col">
-					<div class="contenido2">
-						<h2 class="text-center">REGISTRO DE GASTOS</h2>
-						<div id="Gastos">
-							<ul class="list-group"></ul>
-						</div>
+    <div class="container">
+        <header class="x container-fluid bg-info">
+            <h1 class="text-center">Registro mensual de gastos</h1>
+        </header>
+        <section class="contenido principal">
+            <div class="row">
+                <div class="col">
+                    <div class="contenido1">
+                        <h2 class="text-center">Ingresar gastos</h2>
+                        <form class="agregar-gastos  " action="#">
+                            <div class="g form-group d-flex flex-column">
+                                <label for="gasto">Gasto:</label>
+                                <input type="text" id="gasto" placeholder="nombre del gasto" >
+                            </div>
+                            <div class="g form-group d-flex flex-column">
+                                <label for="cantidad">Valor:</label>
+                                <input type="text" id="cantidad" placeholder="valor del monto">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Agregar:</button>
+                        </form>
+                    </div>
+                
+                </div>
+                <div class="col">
+                    <div class="contenido2">
+                        <h2 class="text-center">REGISTROS DE GASTO</h2>
+                        <div id="gastos">
+                            <ul class="list-group"></ul>
+                        </div>
+                        <div id="presupuesto" class="presupuesto">
+                            <div class="alert alert-primary" >
+                                <p>Presupuesto: $ <samp id="total"></samp></p>
+                            </div>
+                            <div class="alert  alert-danger">
+                                <p>Restante: $ <span id="restante"></span></p>
+                            </div>
 
-						<div id="Presupuesto" class="Presupuesto">
-							<div class="alert alert-dark">
-								<p>Presupuesto : $<span id="total"></span></p>
-							</div>
-							<div class="alert alert-primary">
-								<p> restante: $ <span id="restante"></span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-		</section>
-	</div>
-	<script src="JS/Calcular.js"></script>
+                        </div>
 
+                    </div>
+
+                </div>
+
+            </div>
+            
+
+
+        </section>
+
+    </div>
+    <script src="./java/java.js"></script>
 </body>
 </html>
